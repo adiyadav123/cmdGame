@@ -7,7 +7,6 @@
     border: none;
     outline: none;
     overflow-x: hidden;
-    box-shadow: 0 0 20px lightgray;
     border-radius: 5px;
     padding: 5px;
 }
@@ -58,12 +57,15 @@ input{
 }
 button{
     cursor: pointer;
+    background-color: white;
 }
-button:active{
+button:hover{
     transition: all 0.5s;
+    box-shadow: 0 0 20px lightgray;
 }
 span{
     padding: 5px;
+    box-shadow: 0 0 20px lightgray;
 }
 span img{
     height: 300px;
