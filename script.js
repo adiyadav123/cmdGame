@@ -224,7 +224,7 @@ let randNum = Math.floor(Math.random() * animal.length)
         exp += 10;
         wallet += 700;
         command_usage++;
-        output.textContent = `WALLET = ${wallet},\n       COMMAND USAGE = ${command_usage} times,\n  EXP = ${exp},  \nLEVEL = ${level}, ITEMS = ${inventory},         BANK = ${bank}, net worth = ${bank+wallet}`;
+        output.innerHTML = `<span class="output" id="output">WALLET = ${wallet}</br></br>COMMAND USAGE = ${command_usage} times </br></br>EXP = ${exp}</br></br>LEVEL = ${level}</br></br>ITEMS = ${inventory}</br></br>BANK = ${bank}</br></br>net worth = ${bank+wallet}</span>`;
     }
     else if (user == "/inventory") {
         output.textContent = `${inventory}`
